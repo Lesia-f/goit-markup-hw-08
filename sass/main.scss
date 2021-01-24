@@ -1,0 +1,27 @@
+@import "./base/modern-normalize";
+@import "./base/base";
+@import "./base/container";
+
+
+@import "./utils/variables";
+@import "./utils/fonts";
+
+@import "./components/logo";
+@import "./components/header";
+
+@import "./components/hero";
+
+@import "./components/form";
+@import "./components/specifity";
+
+
+@import "./components/work";
+@import "./components/our-team";
+@import "./components/clients";
+
+@import "./components/portfolio";
+@import "./components/button-portfolio";
+@import "./components/modal-window";
+
+@import "./components/footer";
+

@@ -1,0 +1,106 @@
+.container-portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+.flex-container {
+display: flex;
+justify-content: center;
+}
+.flex-img {
+display: flex;
+flex-wrap: wrap;
+margin:-15px;
+}
+.img-portfolio {
+width: 370px;
+margin: 15px;
+border: 1px solid #F5F4FA;
+transition: box-shadow $time-animation $time-function;
+
+
+&:nth-child(3n) {
+margin-right: 0px;
+}
+
+&:nth-last-child(-n + 3) {
+margin-bottom: 0px;
+}
+
+&:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+ul > .product-name {
+font-size: 18px;
+font-weight: 700;
+line-height: 2;
+letter-spacing: 0.06em;
+text-align: left;
+}
+
+.portfolio-text{
+position: relative; 
+overflow: hidden; 
+transition: transform $time-animation $time-function;
+
+&:hover .overlay {
+transform: translateY(0);
+}
+}
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+transform: translateY(100%);
+transition: transform $time-animation $time-function;
+}
+
+.overlay > p {
+color: #fff;
+padding: 10px;
+margin: 0;
+font-size: 18px;
+}
+
+p.card-text {
+position: absolute;
+display: flex;
+font-size: 18px;
+line-height: 1.56;
+font-weight: 400;
+letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 0;
+width: 100%;
+height: 100%;
+padding: 63px 24px;
+top: 0;
+left: 0;
+opacity: 1;
+text-transform: none;
+transition: 250ms ;
+}
+
+.product {
+margin-top: 4px;
+color:$primary-text-color;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.9;
+letter-spacing: 0.03em;
+text-align: left;
+}
+.product-name {
+margin-bottom: 0px;
+}
+.product-title {
+padding: 20px 24px;
+}

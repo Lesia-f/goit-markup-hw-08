@@ -1,0 +1,143 @@
+.page-header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC; }
+
+.main-nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1200px;
+    }
+    .main-nav-list {
+        display: flex;
+        align-items: center;}
+
+
+
+    .link-list .links  {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+      
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        position: relative;}
+    
+    
+        .link-list {
+    
+        display: flex;
+        margin-left: 93px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        }
+     
+    .link-list .item {
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+          
+        color: $title-text-color;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em
+    }
+     
+    .link-list .item:not(:last-child) {
+        margin-right: 50px; ;
+     }
+    
+    .links .links.current {
+        color: $title-text-color;
+             }
+    
+    .links {
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    
+    .current {
+    position:relative;}
+       
+    
+    
+    .current::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    
+    .links:hover ,
+    .links:focus ,
+    .links.current {
+        color:$accent-color;  }
+    
+    .nav , 
+    .nav-tel ,
+    .nav-mail {
+        display: flex;
+        color:$primary-text-color;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+    
+     .link-adress .item + .item {
+        margin-left: 50px
+    }
+    
+     .link-adress {
+         display: flex;
+         align-items: center;
+     }
+    
+     .address {
+       margin-left: auto;  
+       font-style: normal;
+         
+     }
+     .icon-mail {
+         width: 16px;
+         margin-right: 10px;
+         fill: currentColor;
+         display: flex;;
+      
+     }
+     .icon-tel {
+        width: 10px;
+        margin-right: 10px;
+        fill: currentColor;
+        display: flex;
+    } 
+    
+    .nav-tel:hover ,
+    .nav-mail:hover ,
+    .nav-mail:focus ,
+    .nav-tel:focus {
+        color:$accent-color;
+        }
+    
+    .item-mail {
+        width: 161px;
+        margin-right: 30px;
+        height: 16px;
+        display: flex;
+    }
+    .item-tel {
+        width: 142px;
+        height: 16px;
+        display: flex;
+    }

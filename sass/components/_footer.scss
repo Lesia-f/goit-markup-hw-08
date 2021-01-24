@@ -1,0 +1,125 @@
+.social-container {
+    display: inline-block;
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+
+.social-title {
+color: $accent-color-2;
+text-align: center;
+text-transform: uppercase;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+padding-bottom: 20px;
+padding-right: 61px;
+margin: 0px;  
+}
+
+
+.logo-footer {
+color: $accent-color-2;
+display: inline-block;
+font-family: 'Raleway', sans-serif;
+font-size: 26px; 
+font-weight: 700; 
+line-height: 1.19;
+letter-spacing: 0.03em;
+margin-left: 0px;
+}
+
+
+a.nav {
+margin-bottom: 9px;
+margin-top: 9px;
+}
+.map {
+color: $accent-color-2;
+margin-top: 20px;
+display: inline-block;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.7;
+letter-spacing: 0.03em;
+text-align: left;
+width:231px;
+margin-right: 0px;
+justify-content: flex-start; 
+}
+.web {
+display: inline-flex;
+flex-direction:  column;
+}
+.footer-block{
+display: flex;
+}
+.container-footer {
+display: flex;
+align-items:baseline;
+margin-left: auto;
+margin-right: auto;
+padding: 0 15px;
+width: 1200px;
+}
+
+.social-footer {
+display:inline-block;
+justify-content: space-between;
+ width: 206px; 
+ 
+}
+.footer-invoke {
+margin-left: 93px;
+}
+.invoke {
+color:$accent-color-2;
+text-transform: uppercase;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+padding-bottom: 20px;
+padding-right: 0px;
+margin: 0px;
+}
+.form-button{
+display: flex;
+}
+.form-footer {
+font-family: Roboto;
+color:rgba(255, 255, 255, 0.6);
+padding-left: 16px; 
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background:$background-color;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+}
+.subscribe{
+justify-content: center;
+align-items: center;
+display: inline-flex;
+margin-left: 12px;
+
+} 
+
+.icon-send{
+margin-left: 10px;
+}

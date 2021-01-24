@@ -1,0 +1,54 @@
+.modal {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:$transform-scale; 
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: $time-animation $time-function;
+    }
+     
+     .button-modal-open {
+        font-family: inherit;
+        background: $accent-color;
+        color: $accent-color-2;
+        padding: 10px 32px;
+        border-radius: 4px;  
+        display: inline-block;
+        min-width: 200px;  
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.86;
+        letter-spacing: 0.06em;
+        border: 1px solid transparent; }
+
+
+     .button-modal-close {
+       border: none;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background-color:$accent-color-2;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    
+      .close{
+        position: absolute;
+        transform: $transform;
+        width: 11px;
+        height: 11px;  
+      }
+    
+      .close:hover{
+        fill: $accent-color;
+      }
+      

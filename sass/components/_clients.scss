@@ -1,0 +1,116 @@
+/*clients*/
+.clients-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  text-align: center;
+}
+
+.clients {
+  padding-bottom: 94px;
+}
+.client {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  width: 1200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.border-client {
+  display: inline-block;
+  border-color: currentColor;
+  transition: color $time-animation  $time-function;
+
+  &:hover {
+  color: $accent-color;}
+}
+.our-client {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 15px;
+  transition: border-color $time-animation  $time-function,
+    fill $time-animation  $time-function;
+
+
+    &:hover,
+    &:hover svg,
+    &:focus,
+    &:focus svg {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+
+    &:last-child {
+      margin-right: 0px;}
+    }
+
+.client-position {
+  background-position: center;
+  display: flex;
+}
+
+.yaCo {
+  width: 45px;
+  height: 50px;
+  display: flex;
+}
+.company2 {
+  width: 40px;
+  height: 52px;
+}
+
+.company3 {
+  width: 41px;
+  height: 43px;
+}
+
+.company4 {
+  width: 80px;
+  height: 42px;
+}
+
+.company6 {
+  width: 88px;
+  height: 45px;
+}
+.brand {
+  width: 59px;
+  height: 47px;
+}
+
+.yaCo,
+.company2,
+.company3,
+.company4,
+.brand,
+.company6 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  fill: #afb1b8;
+  transition: fill $time-animation  $time-function;
+}
+
+.yaCo:hover,
+.company2:hover,
+.company3:hover,
+.company4:hover,
+.brand:hover,
+.company6:hover,
+.yaCo:focus,
+.company2:focus,
+.company3:focus,
+.company4:focus,
+.brand:focus,
+.company6:focus {
+  fill: $accent-color;
+}
