@@ -21,8 +21,7 @@
         <nav class="main-nav-list">
           <!-- Навигация на другие места страницы -->
           <a href="" class="logo">Web<span class="logo-studio">Studio</span></a>
-
-          <button type="button" class="menu-button is-open" 
+          <button type="button" class="menu-button" 
           aria-expanded="false" 
           aria-controls="menu-container"
           data-menu-button>
@@ -36,9 +35,8 @@
             </use>
           </svg> 
         </button>
-
-<div class="mobil-menu" id="mobil-menu" data-menu>
-          <ul class="link-list">
+         <div class="mobil-menu-container" data-menu>
+        <ul class="link-list">
             <li class="item">
               <a href="./index.html" class="links current">Cтудия</a>
             </li>
@@ -48,8 +46,7 @@
             <li class="item"><a href="" class="links">Контакты</a></li>
           </ul>
         
-        </nav>
-        
+               
         <address class="address">
           <ul class="link-adress">
             <!-- Ссылка на адрес электронной почты  -->
@@ -72,8 +69,8 @@
           </ul>
  
         </address>
-       </div>
-      
+      </div>
+      </nav>
       </div>
     </header>
 
@@ -536,7 +533,18 @@
         </div>
       </div>
     </footer>
-
+    <script>
+      (() => {
+      document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+        e.preventDefault();
+    
+        new FormData(e.currentTarget).forEach((value, name) =>
+          console.log(`${name}: ${value}`),
+        );
+      });
+    })();
+  </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>
