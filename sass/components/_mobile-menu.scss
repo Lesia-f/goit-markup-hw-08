@@ -1,7 +1,7 @@
 .menu-button {
- // display: inline-flex;
- // margin: 0;
- // padding: 0;
+ display: inline-flex;
+  margin: 0;
+  padding: 0;
   border: none;
   margin-left: auto;
   background-color: transparent;
@@ -25,31 +25,205 @@
 
 
 .mobil-menu-container {
+  z-index: 2;
+
   @media screen and (max-width: 767px) {
           display: none;
-          padding: 60px 0px;
-          position: absolute;
-          z-index: 1;
+          position: absolute;      
           top: 100%;
-          left: 0;
           width: 100%;
+          left: 0;
+          padding: 60px 0px;
+          
       
-          background-color:$background-color-2;
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-          0px 2px 4px rgba(0, 0, 0, 0.08), 
-          0px 1px 3px rgba(0, 0, 0, 0.16);
+          background-color:$accent-color-2;
+          text-align: center;
+          
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          
           
           &.is-open {
               display: block;
     }
    }
   @media screen and (min-width: 768px) {
-      position: initial;
+     // position: initial;
       display: flex;
       width: 100%;
       justify-content: space-between;
       align-items: center;
    }
+   @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 
-  
+  }
+
+  .link-list .link-adress {
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.02em;
+
+@media screen and (max-width: 767px) {
+    text-align: center;
+}
+}
+
+.link-list {
+@media screen and (max-width: 767px) {
+      //  padding-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+       display: flex;
+        padding: 0px;
+        
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 16px;
+ }
+}
+    
+.link-adress {
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        font-size: 12px;
+        line-height: 14px;
+}
+
+ @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    font-style: normal;
+    padding: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+ }
+}
+
+    .link-list .item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            padding-bottom: 40px;
+    }
+    
+    @media screen and (min-width: 768px) {     
+            margin-right: 50px; ;
+     }}
+
+
+     .link-list .item:last-child {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+         }
+        }
+    .link-adress.item-mail + .item-tel:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                padding-bottom: 16px;
+        }
+        
+        @media screen and (min-width: 768px) {
+                padding-bottom: 10px;
+         }
+        @media screen and (min-width: 1200px) {
+             margin-right: 50px;
+             padding-bottom: 0px;
+         }
+        }
+
+
+        .item-mail .item-tel {
+            @media screen and (min-width: 1200px) {
+             display: flex;
+             align-items: center;
+         }
+         }
+
+         .link-adress .icon-mail {
+            margin-right: 10px;
+        }
+        
+        .link-adress.icon-tel {
+            margin-right: 10px;
+          
+       } 
+
+.links .links.current {
+    color: $title-text-color;
+         }
+
+.links {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.current {
+position:relative;
+padding-bottom: 8px;
+color: $accent-color;
+
+@media screen and (max-width: 1200px) {
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+}
+}    
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.links:hover ,
+.links:focus ,
+.links.current {
+    color:$accent-color;  }
+
+.nav , 
+.nav-tel ,
+.nav-mail {
+   display: flex;
+    color:$primary-text-color;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ 
+ .address {
+   margin-left: auto;  
+   font-style: normal;
+     
+ }
+ 
+
+.nav-tel:hover ,
+.nav-mail:hover ,
+.nav-mail:focus ,
+.nav-tel:focus {
+    color:$accent-color;
+    }
+
+.item-mail {
+    width: 161px;
+    margin-right: 30px;
+    height: 16px;
+    display: flex;
+}
+.item-tel {
+    width: 142px;
+    height: 16px;
+    display: flex;
+}
+
